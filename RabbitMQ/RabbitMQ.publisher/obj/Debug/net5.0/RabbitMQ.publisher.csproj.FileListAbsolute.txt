@@ -1,12 +1,11 @@
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\bin\Debug\net5.0\RabbitMQ.publisher.exe
+C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\bin\Debug\net5.0\RabbitMQ.publisher.dll
+C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\bin\Debug\net5.0\RabbitMQ.Client.dll
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\bin\Debug\net5.0\RabbitMQ.publisher.deps.json
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\bin\Debug\net5.0\RabbitMQ.publisher.runtimeconfig.json
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\bin\Debug\net5.0\RabbitMQ.publisher.runtimeconfig.dev.json
-C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\bin\Debug\net5.0\RabbitMQ.publisher.dll
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\bin\Debug\net5.0\ref\RabbitMQ.publisher.dll
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\bin\Debug\net5.0\RabbitMQ.publisher.pdb
-C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\bin\Debug\net5.0\RabbitMQ.Client.dll
-C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\obj\Debug\net5.0\RabbitMQ.publisher.csproj.AssemblyReference.cache
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\obj\Debug\net5.0\RabbitMQ.publisher.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\obj\Debug\net5.0\RabbitMQ.publisher.AssemblyInfoInputs.cache
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\obj\Debug\net5.0\RabbitMQ.publisher.AssemblyInfo.cs

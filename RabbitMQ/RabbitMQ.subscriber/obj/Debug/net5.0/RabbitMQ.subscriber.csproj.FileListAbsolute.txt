@@ -6,7 +6,6 @@ C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\bin\Debug\n
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\bin\Debug\net5.0\ref\RabbitMQ.subscriber.dll
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\bin\Debug\net5.0\RabbitMQ.subscriber.pdb
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\bin\Debug\net5.0\RabbitMQ.Client.dll
-C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\RabbitMQ.subscriber.csproj.AssemblyReference.cache
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\RabbitMQ.subscriber.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\RabbitMQ.subscriber.AssemblyInfoInputs.cache
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\RabbitMQ.subscriber.AssemblyInfo.cs
@@ -16,3 +15,4 @@ C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\n
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\ref\RabbitMQ.subscriber.dll
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\RabbitMQ.subscriber.pdb
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\RabbitMQ.subscriber.genruntimeconfig.cache
+C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\RabbitMQ.subscriber.csproj.AssemblyReference.cache
