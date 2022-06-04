@@ -33,6 +33,7 @@ namespace RabbitMQ.publisher
 
            var proporties = channel.CreateBasicProperties();
            proporties.Headers = headers;
+           proporties.Persistent = true;//mesajlar kalıcı olur 
 
            channel.BasicPublish("header-exchange",string.Empty,proporties,Encoding.UTF8.GetBytes("headers-message"));
 
