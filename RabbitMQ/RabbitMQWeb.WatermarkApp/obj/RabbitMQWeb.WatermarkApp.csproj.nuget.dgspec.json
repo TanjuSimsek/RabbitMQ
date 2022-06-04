@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\deads\\Desktop\\RabitMQ\\RabbitMQ\\RabbitMQ\\RabbitMQWeb.WatermarkApp\\RabbitMQWeb.WatermarkApp.csproj": {}
+    "C:\\Users\\deads\\Desktop\\RabitMQ\\RabbitMQ\\RabbitMQ\\RabbitMQWeb.WaterMarkApp\\RabbitMQWeb.WaterMarkApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\deads\\Desktop\\RabitMQ\\RabbitMQ\\RabbitMQ\\RabbitMQWeb.WatermarkApp\\RabbitMQWeb.WatermarkApp.csproj": {
+    "C:\\Users\\deads\\Desktop\\RabitMQ\\RabbitMQ\\RabbitMQ\\RabbitMQWeb.WaterMarkApp\\RabbitMQWeb.WaterMarkApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\deads\\Desktop\\RabitMQ\\RabbitMQ\\RabbitMQ\\RabbitMQWeb.WatermarkApp\\RabbitMQWeb.WatermarkApp.csproj",
-        "projectName": "RabbitMQWeb.WatermarkApp",
-        "projectPath": "C:\\Users\\deads\\Desktop\\RabitMQ\\RabbitMQ\\RabbitMQ\\RabbitMQWeb.WatermarkApp\\RabbitMQWeb.WatermarkApp.csproj",
+        "projectUniqueName": "C:\\Users\\deads\\Desktop\\RabitMQ\\RabbitMQ\\RabbitMQ\\RabbitMQWeb.WaterMarkApp\\RabbitMQWeb.WaterMarkApp.csproj",
+        "projectName": "RabbitMQWeb.WaterMarkApp",
+        "projectPath": "C:\\Users\\deads\\Desktop\\RabitMQ\\RabbitMQ\\RabbitMQ\\RabbitMQWeb.WaterMarkApp\\RabbitMQWeb.WaterMarkApp.csproj",
         "packagesPath": "C:\\Users\\deads\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\deads\\Desktop\\RabitMQ\\RabbitMQ\\RabbitMQ\\RabbitMQWeb.WatermarkApp\\obj\\",
+        "outputPath": "C:\\Users\\deads\\Desktop\\RabitMQ\\RabbitMQ\\RabbitMQ\\RabbitMQWeb.WaterMarkApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -48,19 +48,39 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             },
             "RabbitMQ.Client": {
               "target": "Package",
-              "version": "[6.2.1, )"
+              "version": "[6.3.0, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

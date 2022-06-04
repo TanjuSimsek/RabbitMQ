@@ -4,14 +4,14 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RabbitMQWeb.WaterMarkApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using RabbitMQWeb.WatermarkApp.Models;
 
-namespace RabbitMQWeb.WatermarkApp
+namespace RabbitMQWeb.WaterMarkApp
 {
     public class Startup
     {
@@ -25,10 +25,11 @@ namespace RabbitMQWeb.WatermarkApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseInMemoryDatabase(databaseName: "productDb");
 
+                options.UseInMemoryDatabase(databaseName: "productDb");
 
             });
             services.AddControllersWithViews();

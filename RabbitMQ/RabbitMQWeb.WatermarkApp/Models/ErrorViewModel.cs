@@ -1,6 +1,6 @@
 using System;
 
-namespace RabbitMQWeb.WatermarkApp.Models
+namespace RabbitMQWeb.WaterMarkApp.Models
 {
     public class ErrorViewModel
     {

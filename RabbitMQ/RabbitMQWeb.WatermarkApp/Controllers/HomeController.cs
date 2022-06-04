@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using RabbitMQWeb.WatermarkApp.Models;
+using RabbitMQWeb.WaterMarkApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RabbitMQWeb.WatermarkApp.Controllers
+namespace RabbitMQWeb.WaterMarkApp.Controllers
 {
     public class HomeController : Controller
     {

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.publisher", "RabbitMQ.publisher\RabbitMQ.publisher.csproj", "{1E0B5065-43BE-4E91-8261-50D57C3E9104}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.publisher", "RabbitMQ.publisher\RabbitMQ.publisher.csproj", "{1E0B5065-43BE-4E91-8261-50D57C3E9104}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.subscriber", "RabbitMQ.subscriber\RabbitMQ.subscriber.csproj", "{26001E55-5B09-4E15-B595-DA6608D7D185}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.subscriber", "RabbitMQ.subscriber\RabbitMQ.subscriber.csproj", "{26001E55-5B09-4E15-B595-DA6608D7D185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{5C335EBA-5935-432B-BA9F-0530C2E21CF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{5C335EBA-5935-432B-BA9F-0530C2E21CF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQWeb.WatermarkApp", "RabbitMQWeb.WatermarkApp\RabbitMQWeb.WatermarkApp.csproj", "{FA8B13AD-0680-4436-9607-E5EEDA424A31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQWeb.WaterMarkApp", "RabbitMQWeb.WaterMarkApp\RabbitMQWeb.WaterMarkApp.csproj", "{3CA1E097-B9B0-42A7-BA65-7281700F87DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{5C335EBA-5935-432B-BA9F-0530C2E21CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C335EBA-5935-432B-BA9F-0530C2E21CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C335EBA-5935-432B-BA9F-0530C2E21CF1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA8B13AD-0680-4436-9607-E5EEDA424A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA8B13AD-0680-4436-9607-E5EEDA424A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA8B13AD-0680-4436-9607-E5EEDA424A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA8B13AD-0680-4436-9607-E5EEDA424A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA1E097-B9B0-42A7-BA65-7281700F87DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA1E097-B9B0-42A7-BA65-7281700F87DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA1E097-B9B0-42A7-BA65-7281700F87DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA1E097-B9B0-42A7-BA65-7281700F87DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

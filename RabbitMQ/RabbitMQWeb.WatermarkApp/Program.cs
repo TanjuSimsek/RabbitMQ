@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RabbitMQWeb.WatermarkApp
+namespace RabbitMQWeb.WaterMarkApp
 {
     public class Program
     {
