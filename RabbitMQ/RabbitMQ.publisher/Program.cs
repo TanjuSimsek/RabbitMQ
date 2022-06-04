@@ -6,11 +6,13 @@ using RabbitMQ.Client;
 
 namespace RabbitMQ.publisher
 {
+    
+
     class Program
     {
         static void Main(string[] args)
         {
-            //Fanout Exchange
+            //Direct Exchange
             var factory = new ConnectionFactory();
             factory.Uri = new Uri("amqps://crbdixlg:g9QiD8b2xSqzb7Ht0lZMocnmE_2XdT97@jaguar.rmq.cloudamqp.com/crbdixlg");
 
@@ -22,16 +24,29 @@ namespace RabbitMQ.publisher
             
            // channel.QueueDeclare("hello-queue", true, false, false);
 
-           channel.ExchangeDeclare("logs-fanout",durable:true,type:ExchangeType.Fanout);
+           channel.ExchangeDeclare("logs-direct",durable:true,type:ExchangeType.Direct);
+
+           Enum.GetNames((typeof(LogNames))).ToList().ForEach(x =>
+           {
+               var routeKey = $"route-{x}";
+               var queueName = $"direct-queue-{x}";
+               channel.QueueDeclare(queueName, true, false, false);
+
+               channel.QueueBind(queueName, "logs-direct",routeKey,null);
+
+           });
 
             Enumerable.Range(1,50).ToList().ForEach(x =>
             {
-                string message = $"log:{x}";
+                LogNames log = (LogNames)new Random().Next(1, 5);
+                string message = $"log-type: {log}";
 
                 var messageBody = Encoding.UTF8.GetBytes(message);
 
-                channel.BasicPublish("logs-fanout", "", null, messageBody);
-                Console.WriteLine($"Mesaj Gönderildi :{message}");
+                var routeKey = $"route-{log}";
+
+                channel.BasicPublish("logs-direct", routeKey, null, messageBody);
+                Console.WriteLine($"Log Gönderildi :{message}");
 
             });
 

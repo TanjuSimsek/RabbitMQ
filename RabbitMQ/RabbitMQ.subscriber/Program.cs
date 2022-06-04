@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Text;
 using System.Threading;
 using RabbitMQ.Client;
@@ -18,18 +19,13 @@ namespace RabbitMQ.subscriber
 
             var channel = connection.CreateModel();
 
-            var randomQueueName = channel.QueueDeclare().QueueName;
-            
+            var queuName = "direct-queue-Critical";
 
-            
 
-            channel.QueueBind(randomQueueName, "logs-fanout","",null);
-
-            //channel.QueueDeclare("hello-queue", true, false, false); publisher tarafında kuyruk yoksa oluşturur
             channel.BasicQos(0,1,false);
             var consumer = new EventingBasicConsumer(channel);
 
-            channel.BasicConsume(randomQueueName, false, consumer);
+            channel.BasicConsume(queuName, false, consumer);
 
             Console.WriteLine("Loglar dinleniyor...");
 
@@ -40,6 +36,8 @@ namespace RabbitMQ.subscriber
                 var message = Encoding.UTF8.GetString(e.Body.ToArray());
                 Thread.Sleep(1500);
                 Console.WriteLine("Gelen Mesaj : " + message);
+
+                File.AppendAllText("log-critical.txt",message+"\n");
 
                 channel.BasicAck(e.DeliveryTag,false);
             };
