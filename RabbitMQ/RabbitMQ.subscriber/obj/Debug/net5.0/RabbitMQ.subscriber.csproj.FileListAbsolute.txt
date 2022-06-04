@@ -16,3 +16,5 @@ C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\n
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\RabbitMQ.subscriber.pdb
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\RabbitMQ.subscriber.genruntimeconfig.cache
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\obj\Debug\net5.0\RabbitMQ.subscriber.csproj.AssemblyReference.cache
+C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\bin\Debug\net5.0\Shared.dll
+C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.subscriber\bin\Debug\net5.0\Shared.pdb

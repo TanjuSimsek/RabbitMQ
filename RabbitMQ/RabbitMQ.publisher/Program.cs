@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Text.Json;
 using RabbitMQ.Client;
+using Shared;
 
 namespace RabbitMQ.publisher
 {
@@ -29,13 +31,15 @@ namespace RabbitMQ.publisher
 
            Dictionary<String, Object> headers = new Dictionary<string, object>();
            headers.Add("format","pdf");
-           headers.Add("shapess","mahoo");
+           headers.Add("shapes","a4");
 
            var proporties = channel.CreateBasicProperties();
            proporties.Headers = headers;
            proporties.Persistent = true;//mesajlar kalıcı olur 
 
-           channel.BasicPublish("header-exchange",string.Empty,proporties,Encoding.UTF8.GetBytes("headers-message"));
+           var product = new Product {Id = 1,Name = "Pen",Price = 1,Stock = 50};
+           var productJsonString = JsonSerializer.Serialize(product);
+           channel.BasicPublish("header-exchange",string.Empty,proporties,Encoding.UTF8.GetBytes(productJsonString));
 
 
 
