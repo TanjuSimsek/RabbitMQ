@@ -18,12 +18,17 @@ namespace RabbitMQ.subscriber
             using var connection = factory.CreateConnection();
 
             var channel = connection.CreateModel();
-
-            var queuName = "direct-queue-Critical";
+            //channel.ExchangeDeclare("logs-topic", durable: true, type: ExchangeType.Topic);
+            var queuName = channel.QueueDeclare().QueueName;
+            
 
 
             channel.BasicQos(0,1,false);
             var consumer = new EventingBasicConsumer(channel);
+            //var routekey = "*.Error.*";
+            //var routekey = "*.*.Warning";
+            var routekey = "Info.#";
+            channel.QueueBind(queuName, "logs-topic",routekey);
 
             channel.BasicConsume(queuName, false, consumer);
 

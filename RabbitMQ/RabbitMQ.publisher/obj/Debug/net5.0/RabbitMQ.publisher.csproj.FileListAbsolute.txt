@@ -15,3 +15,4 @@ C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\obj\Debug\ne
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\obj\Debug\net5.0\ref\RabbitMQ.publisher.dll
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\obj\Debug\net5.0\RabbitMQ.publisher.pdb
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\obj\Debug\net5.0\RabbitMQ.publisher.genruntimeconfig.cache
+C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQ.publisher\obj\Debug\net5.0\RabbitMQ.publisher.csproj.AssemblyReference.cache
