@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -24,36 +25,23 @@ namespace RabbitMQ.publisher
             
            // channel.QueueDeclare("hello-queue", true, false, false);
 
-           channel.ExchangeDeclare("logs-topic",durable:true,type:ExchangeType.Topic);
+           channel.ExchangeDeclare("header-exchange",durable:true,type:ExchangeType.Headers);
+
+           Dictionary<String, Object> headers = new Dictionary<string, object>();
+           headers.Add("format","pdf");
+           headers.Add("shapess","mahoo");
+
+           var proporties = channel.CreateBasicProperties();
+           proporties.Headers = headers;
+
+           channel.BasicPublish("header-exchange",string.Empty,proporties,Encoding.UTF8.GetBytes("headers-message"));
 
 
-           Random rnd = new Random();
-            Enumerable.Range(1,50).ToList().ForEach(x =>
-            {
-                
-                
 
-                
-                LogNames log1 = (LogNames)rnd.Next(1, 5);
-                LogNames log2 = (LogNames)rnd.Next(1, 5);
-                LogNames log3 = (LogNames)rnd.Next(1, 5);
+            Console.WriteLine("Mesaj Gönderildi..");
 
-                var routeKey = $"{log1}.{log2}.{log3}";
-                string message = $"log-type: {log1}-{log2}-{log3}";
 
-                var messageBody = Encoding.UTF8.GetBytes(message);
-                var queueName = $"direct-queue-{x}";
 
-               
-
-                channel.BasicPublish("logs-topic", routeKey, null, messageBody);
-                Console.WriteLine($"Log Gönderildi :{message}");
-
-            });
-
-            
-
-            
             Console.ReadLine();
         }
     }

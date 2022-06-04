@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading;
@@ -25,10 +26,14 @@ namespace RabbitMQ.subscriber
 
             channel.BasicQos(0,1,false);
             var consumer = new EventingBasicConsumer(channel);
-            //var routekey = "*.Error.*";
-            //var routekey = "*.*.Warning";
-            var routekey = "Info.#";
-            channel.QueueBind(queuName, "logs-topic",routekey);
+
+            Dictionary<string, object> headers = new Dictionary<string, object>();
+            headers.Add("format", "pdf");
+            headers.Add("shape", "a4");
+            //headers.Add("x-match","all");
+            headers.Add("x-match", "any");
+
+            channel.QueueBind(queuName,exchange: "header-exchange",string.Empty,headers);
 
             channel.BasicConsume(queuName, false, consumer);
 
@@ -42,7 +47,7 @@ namespace RabbitMQ.subscriber
                 Thread.Sleep(1500);
                 Console.WriteLine("Gelen Mesaj : " + message);
 
-                File.AppendAllText("log-critical.txt",message+"\n");
+               
 
                 channel.BasicAck(e.DeliveryTag,false);
             };
