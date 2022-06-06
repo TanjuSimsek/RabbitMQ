@@ -19,6 +19,6 @@ namespace RabbitMQWeb.WaterMarkApp.Models
         public int Stock { get; set; }
         [StringLength(100)]
 
-        public string Url { get; set; }
+        public string ImageName { get; set; }
     }
 }
