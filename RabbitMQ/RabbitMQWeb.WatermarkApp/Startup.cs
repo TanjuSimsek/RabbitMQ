@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using RabbitMQ.Client;
+using RabbitMQWeb.WaterMarkApp.BackgroundServices;
 using RabbitMQWeb.WaterMarkApp.Services;
 
 namespace RabbitMQWeb.WaterMarkApp
@@ -27,7 +28,7 @@ namespace RabbitMQWeb.WaterMarkApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton(sp => new ConnectionFactory() {Uri = new Uri(Configuration.GetConnectionString("RabbitMQ"))});
+            services.AddSingleton(sp => new ConnectionFactory() {Uri = new Uri(Configuration.GetConnectionString("RabbitMQ")),DispatchConsumersAsync = true});
 
             services.AddSingleton<RabbitMQClientService>();
             services.AddSingleton<RabbitMQPublisher>();
@@ -37,6 +38,7 @@ namespace RabbitMQWeb.WaterMarkApp
                 options.UseInMemoryDatabase(databaseName: "productDb");
 
             });
+            services.AddHostedService<ImageWatermarkProcessBackgroundService>();
             services.AddControllersWithViews();
         }
 

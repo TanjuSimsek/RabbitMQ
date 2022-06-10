@@ -155,3 +155,4 @@ C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQWeb.WaterMarkApp\obj\De
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQWeb.WaterMarkApp\obj\Debug\net5.0\ref\RabbitMQWeb.WaterMarkApp.dll
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQWeb.WaterMarkApp\obj\Debug\net5.0\RabbitMQWeb.WaterMarkApp.pdb
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQWeb.WaterMarkApp\obj\Debug\net5.0\RabbitMQWeb.WaterMarkApp.genruntimeconfig.cache
+C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RabbitMQWeb.WaterMarkApp\obj\Debug\net5.0\RabbitMQWeb.WaterMarkApp.csproj.AssemblyReference.cache
