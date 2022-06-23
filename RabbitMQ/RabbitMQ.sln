@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQWeb.WaterMarkApp", "RabbitMQWeb.WaterMarkApp\RabbitMQWeb.WaterMarkApp.csproj", "{3CA1E097-B9B0-42A7-BA65-7281700F87DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaabbitMQWeb.ExcelCreate", "RaabbitMQWeb.ExcelCreate\RaabbitMQWeb.ExcelCreate.csproj", "{32B84B7B-2560-4716-AD32-F59576633B9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaabbitMQWeb.ExcelCreate", "RaabbitMQWeb.ExcelCreate\RaabbitMQWeb.ExcelCreate.csproj", "{32B84B7B-2560-4716-AD32-F59576633B9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCreateWorkerService", "FileCreateWorkerService\FileCreateWorkerService.csproj", "{D1D3DD59-35D5-4467-A70C-0722C323A521}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{32B84B7B-2560-4716-AD32-F59576633B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32B84B7B-2560-4716-AD32-F59576633B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32B84B7B-2560-4716-AD32-F59576633B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1D3DD59-35D5-4467-A70C-0722C323A521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D3DD59-35D5-4467-A70C-0722C323A521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D3DD59-35D5-4467-A70C-0722C323A521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D3DD59-35D5-4467-A70C-0722C323A521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
