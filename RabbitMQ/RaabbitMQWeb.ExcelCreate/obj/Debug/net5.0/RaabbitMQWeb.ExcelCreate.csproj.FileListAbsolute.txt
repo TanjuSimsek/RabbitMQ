@@ -153,3 +153,5 @@ C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RaabbitMQWeb.ExcelCreate\bin\De
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RaabbitMQWeb.ExcelCreate\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RaabbitMQWeb.ExcelCreate\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RaabbitMQWeb.ExcelCreate\obj\Debug\net5.0\Razor\Views\Product\Files.cshtml.g.cs
+C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RaabbitMQWeb.ExcelCreate\bin\Debug\net5.0\Shared.dll
+C:\Users\deads\Desktop\RabitMQ\RabbitMQ\RabbitMQ\RaabbitMQWeb.ExcelCreate\bin\Debug\net5.0\Shared.pdb

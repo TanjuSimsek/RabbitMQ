@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.EntityFrameworkCore;
 using RaabbitMQWeb.ExcelCreate.Models;
+using RaabbitMQWeb.ExcelCreate.Services;
+using Shared;
 
 namespace RaabbitMQWeb.ExcelCreate.Controllers
 {
@@ -15,11 +17,13 @@ namespace RaabbitMQWeb.ExcelCreate.Controllers
     {
         private readonly AppDbContext _context;
         private readonly UserManager<IdentityUser> _userManger;
+        private readonly RabbitMQPublisher _rabbitMqPublisher;
 
-        public ProductController(UserManager<IdentityUser> userManger, AppDbContext context)
+        public ProductController(UserManager<IdentityUser> userManger, AppDbContext context, RabbitMQPublisher rabbitMqPublisher)
         {
             _userManger = userManger;
             _context = context;
+            _rabbitMqPublisher = rabbitMqPublisher;
         }
 
         [Authorize]
@@ -44,6 +48,7 @@ namespace RaabbitMQWeb.ExcelCreate.Controllers
            await _context.UserFiles.AddAsync(userfile);
            await _context.SaveChangesAsync();
            //rabbitMQ mesaj gonderimi
+           _rabbitMqPublisher.Publish(new CreateExcelMessage(){FileId = userfile.Id,UserId =user.Id });
            TempData["StartCreatingExcel"] = true;
            return RedirectToAction(nameof(Files));
 
