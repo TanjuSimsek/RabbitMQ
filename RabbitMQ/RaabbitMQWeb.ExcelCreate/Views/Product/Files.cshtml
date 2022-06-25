@@ -4,6 +4,30 @@
 }
 
 <h1>Files</h1>
+@section Scripts
+{
+    <script>
+
+        $(document).ready(function() {
+
+            var hasStartCreatingExcel = '@TempData["StartCreatingExcel"]';
+            if (hasStartCreatingExcel) {
+
+
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Excel Creating Process is started. When your task done,you will inform!',
+                    showConfirmButton: false,
+                    timer: 2500
+
+                });
+
+            }
+        })
+
+    </script>
+}
 <table class=" table table-striped">
     <thead>
     <tr>
