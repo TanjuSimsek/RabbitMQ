@@ -48,7 +48,7 @@ namespace RaabbitMQWeb.ExcelCreate.Controllers
            await _context.UserFiles.AddAsync(userfile);
            await _context.SaveChangesAsync();
            //rabbitMQ mesaj gonderimi
-           _rabbitMqPublisher.Publish(new CreateExcelMessage(){FileId = userfile.Id,UserId =user.Id });
+           _rabbitMqPublisher.Publish(new CreateExcelMessage(){FileId = userfile.Id });
            TempData["StartCreatingExcel"] = true;
            return RedirectToAction(nameof(Files));
 

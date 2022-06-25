@@ -4,7 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FileCreateWorkerService.Models;
 using FileCreateWorkerService.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using RabbitMQ.Client;
 
@@ -22,6 +24,11 @@ namespace FileCreateWorkerService
                 .ConfigureServices((hostContext, services) =>
                 {
                     IConfiguration Configuration = hostContext.Configuration;
+                    services.AddDbContext<AdventureWorks2019Context>(options =>
+                    {
+                        options.UseSqlServer(Configuration.GetConnectionString("SqlServer"));
+
+                    });
                     services.AddSingleton<RabbitMQClientService>();
                     services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri(Configuration.GetConnectionString("RabbitMQ")), DispatchConsumersAsync = true });
                     services.AddHostedService<Worker>();
